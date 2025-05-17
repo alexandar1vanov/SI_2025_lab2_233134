@@ -1,4 +1,4 @@
-Aleksandar Ivanov 233134
+Александар Иванов 233134
 
 ![CFG](dijagram4e_233134.png)
 
