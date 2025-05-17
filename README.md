@@ -1,5 +1,5 @@
-1. Александар Иванов 233134
-
+# **Втора лабораториска вежба по Софтверско инженерство**
+##      **Александар Иванов, бр на индекс 233134**
 2.
 ![CFG](dijagram4e_233134.png)
 
@@ -20,21 +20,21 @@
 Тест случај 6: Невалидна картичка (погрешна должина) Влез: allItems = [Item("item1", 1, 100, 0)] cardNumber = "123" Очекуван излез: Исклучок: RuntimeException("Invalid card number!") Објаснување:Го покрива случајот каде што бројот на картичката не ја има потребната должина од 16 цифри.
 
 5.
-// T1 - Ниеден услов не е исполнет new Item("Item1", 3, 150, 0.0); // false false false
+ T1 - Ниеден услов не е исполнет new Item("Item1", 3, 150, 0.0); // false false false
 
-// T2 - Само quantity > 10 new Item("Item2", 12, 150, 0.0); // false false true
+ T2 - Само quantity > 10 new Item("Item2", 12, 150, 0.0); // false false true
 
-// T3 - Само discount > 0 new Item("Item3", 3, 150, 0.15); // false true false
+ T3 - Само discount > 0 new Item("Item3", 3, 150, 0.15); // false true false
 
-// T4 - discount и quantity исполнети new Item("Item4", 20, 150, 0.3); // false true true
+ T4 - discount и quantity исполнети new Item("Item4", 20, 150, 0.3); // false true true
 
-// T5 - Само price > 300 new Item("Item5", 3, 500, 0.0); // true false false
+ T5 - Само price > 300 new Item("Item5", 3, 500, 0.0); // true false false
 
-// T6 - price и quantity исполнети new Item("Item6", 18, 450, 0.0); // true false true
+ T6 - price и quantity исполнети new Item("Item6", 18, 450, 0.0); // true false true
 
-// T7 - price и discount исполнети new Item("Item7", 3, 400, 0.25); // true true false
+ T7 - price и discount исполнети new Item("Item7", 3, 400, 0.25); // true true false
 
-// T8 - Сите услови исполнети new Item("Item8", 20, 450, 0.25); // true true true
+ T8 - Сите услови исполнети new Item("Item8", 20, 450, 0.25); // true true true
 
 7.
 Објаснување на напишаните unit тестови: Statement coverage: Тестови за празна листа, невалидни имиња (null или празен стринг), артикли со и без попуст, и проверка на валиден/невалиден број на картичка. Цел: да се покријат сите линии од кодот барем еднаш.
